@@ -1,0 +1,8 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+img {
+    padding:       2rem;
+    border-radius: 2rem;
+    aspect-ratio: 1 / 1;
+}

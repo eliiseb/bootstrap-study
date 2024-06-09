@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5.3.2 Näide</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+	<script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <!-- Hero Banner -->
+    <header class="container-fluid"> <!-- Container spans entire width of the viewport. useful when creating page where content stretches to fill the entire screen -->
+      <div class="row">
+        <div class="col">
+          <div class="p-5 mb-4 bg-dark rounded-3 text-white"> <!-- Dark background, white text, rounded rectangles -->
+            <h1>Tere Tulemast!</h1>
+            <p>See on lihtne hero bänner, kasutades Bootstrap 5.3.2.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Kolm Kaarti -->
+    <section class="container mb-4"> <!-- Card with margin bottom https://getbootstrap.com/docs/5.3/utilities/spacing/ -->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2013/05/30/18/21/cat-114782_1280.jpg" class="card-img-top" alt="Cleanup">
+            <div class="card-body">
+              <h5 class="card-title">Kaart 1</h5>
+              <p class="card-text">See on esimene kaart. "In ancient times, cats were worshipped as gods; they have not forgotten this." - Terry Pratchett.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/02/21/05/17/cat-3169476_1280.jpg" class="card-img-top" alt="Kitten">
+            <div class="card-body">
+              <h5 class="card-title">Kaart 2</h5>
+              <p class="card-text">See on teine kaart. No matter how much cats fight, there always seem to be plenty of kittens.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/12/51/cat-972603_1280.jpg" class="card-img-top" alt="Cat at moonlight">
+            <div class="card-body">
+              <h5 class="card-title">Kaart 3</h5>
+              <p class="card-text">See on kolmas kaart.</p>
+              <p class="card-text">Playing with moonlight</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lühike Sisutekst -->
+    <article class="container">
+      <div class="row">
+        <div class="col">
+          <p>Siin on mõned näited lihtsast sisust, kasutades Bootstrap 5.3.2.</p>
+		  <p>
+		  <b>Container:</b>
+		  Kõige välimine kiht ja seda kasutatakse sisu tsentreerimiseks ja paigutamiseks lehel (sisu ainult kindla kasti sees).
+		  <p><i>.container</i>: Fikseeritud laiusega konteiner, mis muutub erinevatel ekraanisuurustel.</p>
+		  <p><i>.container-fluid</i>: Konteiner, mis venib kogu ekraani laiusele igal seadmel.</p>
+		  </p>
+          <p><b>Row:</b>
+		  Rida kasutatakse veergude (columns) grupeerimiseks ja see tagab, et kõik veerud asuvad ühel ja samal horisontaaltasandil. 
+		  Row klass aitab hallata veergude vahelisi vahekaugusi (gutters) ja ridade ühtlust. 
+		  Rida on vaja, et veerud töötaks õigesti. Ilma reata võivad veerud paigutuda ebaühtlaselt</p>
+          <p><b>Col/Column:</b>
+		  Veerud on Bootstrapi võrkude süsteemi põhielemendid. 
+		  Nad võimaldavad sisu jagada mitmeks veeruks, mis kohanduvad automaatselt vastavalt ekraani suurusele. 
+		  See tagab, et sisu on korralikult organiseeritud ja reageeriv.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Jalus -->
+    <footer class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-center">&copy; 2024 Näidisveebisait</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
